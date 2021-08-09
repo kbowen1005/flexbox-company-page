@@ -1,0 +1,325 @@
+html, body {
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	margin: 0; 
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+a {
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 20px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	align-items: center;
+	background-color: #2d2a2a;
+}
+
+header img {
+	height: 60px;
+}
+
+header nav ul li {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0 10px;
+}
+
+header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
+	color: #786f6f;
+}
+
+main {
+	padding-top: 75px;
+}
+
+#banner {
+	background-image: url(img/banner.jpeg);
+	background-size: cover;
+	background-position: top center;
+	height: 75vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+#banner h1 {
+	font-size: 5rem;
+	font-family: Bevan, serif;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+#banner h1 span {
+	background-color: #2d2a2a;
+	margin-top: 10px;
+	padding: 0 60px 0 20px;
+}
+
+#whatWeDo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0 20px;
+}
+
+#whatWeDo p {
+	text-align: center;
+	width: 75%;
+	font-size: 1.75rem;
+	line-height: 2.75rem;
+}
+
+hr {
+	border: 1px solid #786f6f;
+	width: 10%;
+}
+
+#services {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 100px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#services .service {
+	width: 30%;
+	background-color: #2d2a2a;
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+#services .service:first-child {
+	margin-top: 50px;
+}
+
+#services .service:last-child {
+	margin-top: 100px;
+}
+
+#services .service h2 {
+	font-family: Bevan, serif;
+}
+
+#services .service h3 {
+	font-size: 2rem;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+#services .service:last-child h3 {
+	font-size: 1.5rem;
+}
+
+#services .service ul {
+	text-align: left;
+	margin: 0;
+	padding-left: 20px;
+	font-size: .9rem;
+	line-height: 1.5rem;
+}
+
+#services .service ul li:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+#bios {
+	display: flex;
+	flex-direction: row;
+}
+
+#bios .bio-img {
+	background-image: url(img/bio.jpeg);
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+}
+
+#bios .bio-content {
+	width: 65%;
+	background-color: #2d2a2a;
+	color: #fff;
+	padding: 50px 60px;
+}
+
+#bios .bio-content .artist-wrap {
+	display: flex;
+}
+
+#bios .bio-content .artist-wrap .artist {
+	margin-right: 40px;
+}
+
+#bios .bio-content .artist-wrap .artist h4 {
+	font-family: Bevan, serif;
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+#bios .bio-content .artist-wrap .artist h5 {
+	margin-top: 3px;
+	font-weight: 400;
+}
+
+#contact {
+	background-color: #786f6f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+}
+
+#contact ul {
+	margin: 0;
+	padding: 0;
+}
+
+#contact ul li {
+	display: inline;
+}
+
+#contact ul li a {
+	color: #fff;
+	font-size: 1.75rem;
+	margin: 0 10px;
+}
+
+#contact ul li a:hover, #contact ul li a:active, #contact ul li a:focus {
+	color: #2d2a2a;
+}
+
+footer {
+	background-color: #786f6f;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	font-size: .75rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	#services {
+		width: 95%;
+	}
+	#services .service {
+		width: 32%;
+	}
+	#banner h1 {
+		font-size: 4rem;
+	}
+	#whatWeDo {
+		padding: 60px 0 20px;
+	}
+	#whatWeDo p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+	#services {
+		padding: 60px 0;
+	}
+	#contact {
+		padding: 80px 0;
+	}
+	footer {
+		padding: 30px 0;
+	}
+}	
+
+@media only screen and (max-width: 900px) {
+	#services .service {
+		padding: 25px;
+	}	
+}
+
+@media only screen and (max-width: 768px) {
+	html, body {
+		font-size: 13px;
+	}
+	#services {
+		flex-direction: column;
+	}
+	#services .service {
+		margin-bottom: 20px;
+		width: 100%;
+		padding: 5px 30px;
+		text-align: left;
+	}
+	#services .service:first-child {
+		margin-top: 0;
+	}
+	#services .service:last-child {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#bios {
+		flex-direction: column;
+	}
+	#bios .bio-img {
+		width: 100%;
+		height: 350px;
+	}
+	#bios .bio-content {
+		width: 100%;
+		padding: 40px;
+	}
+	#bios .bio-content .artist-wrap .artist h4 {
+		margin-top: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 520px) {
+	#banner {
+		height: 65vh;
+	}
+	#banner h1 {
+		font-size: 3rem;
+	}
+	#banner h1 span {
+		margin-top: 6px;
+		padding: 0 45px 0 15px;
+	}
+	#whatWeDo {
+		padding: 40px 0 20px;
+	}
+	#whatWeDo p {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	header nav ul li a {
+		padding: 0 5px;
+	}
+	#bios .bio-content .artist-wrap .artist {
+		margin-right: 20px;
+	}
+}

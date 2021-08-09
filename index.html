@@ -3,17 +3,86 @@
 	<head>
 		<title>Company Home Page with Flexbox</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
-			
+			<img src="img/logo.png" alt="Rust & Rose">
+			<nav>
+				<ul>
+					<li><a href="#whatWeDo">What We Do</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#bios">Bios</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			
+			<section id="banner">
+				<h1><span>Live</span><span>Acoustic</span><span>Music</span></h1>
+			</section>
+			<section id="whatWeDo">
+				<p>Acoustic duo bringing bluegrass & folk flare to your favorite hits featuring local singer/songwriters Kalyn Bowen & Wendell Gooch</p>
+			</section>
+			<hr>
+			<section id="services">
+				<div class="service">
+					<h2>Hourly Tunes</h2>
+					<ul>
+						<li>Hourly rate for a live acoustic performance</li>
+						<li>Must be within 60 miles of Braselton, GA</li>
+					</ul>
+					<h3>$150</h3>
+				</div>
+				<div class="service">
+					<h2>Night Out</h2>
+					<ul>
+						<li>3-4 hour live acoustic performance</li>
+						<li>Package reserved for bars and restaurants</li>
+					</ul>
+					<h3>$400</h3>
+				</div>
+				<div class="service">
+					<h2>Private Party</h2>
+					<ul>
+						<li>We bring our equipment and performance to your party</li>
+						<li>Set length & location negotiable</li>
+					</ul>
+					<h3>Contact Us</h3>
+				</div>
+			</section>
+			<section id="bios">
+				<div class="bio-img"></div>
+				<div class="bio-content">
+					<div class="artist-wrap">
+						<div class="artist">
+							<h4>Kalyn Bowen</h4>
+							<h5>Lead Vocalist | Acoustic Guitar</h5>
+						</div>
+						<div class="artist">
+							<h4>Wendell Gooch</h4>
+							<h5>Vocalist | Lead Acoustic Guitar</h5>
+						</div>
+					</div>
+					<p>Kalyn Bowen and Wendell are two self-taught musicians who clicked, musically, while picking on a porch, in good ole north Georgia, back in the spring of 2019.</p>
+					<p>Kalyn is a talented singer/song writer, born and raised in Georgia. Wendell, also born and raised in Georgia, has always had an unbelievable ear for music and is a talented guitarist, which compliments Kalyn's amazing vocal skills. Their shared background in bluegrass and folk music, helps to meld their unique take on the latest and classic hits, as well as, original tunes.</p>
+					<p>Together, they make Rust and Rose.</p>
+				</div>
+			</section>
+			<section id="contact">
+				<ul class="social-wrap">
+					<li><a href="#" title="Rust & Rost Facebook"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#" title="Rust & Rose Instagram"><i class="fab fa-instagram-square"></i></a></li>
+					<li><a href="#" title="Rust & Rose Youtube"><i class="fab fa-youtube-square"></i></a></li>
+				</ul>
+			</section>
 		</main>
 		<footer>
-			
+			<p>&copy; 2021 Rust & Rose Music</p>
 		</footer>
 	</body>
 </html>
